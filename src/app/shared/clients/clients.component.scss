@@ -1,0 +1,30 @@
+.clients{
+    background: #121212;
+    padding: 30px; 
+    h4{
+        color: #FFF;
+        font-size: 34px;
+        font-weight: 300;
+        
+    }
+    p{
+            font-size: 18px;
+            color: #FFF;
+        }
+        .client-list{
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            span{
+                flex: 0 0 calc(33.3333% - 20px); /* Adjusts item size for margins */
+                height: 90px;
+                margin-bottom: 10px;
+                img{
+                    width: auto;
+                    // height: 90px;
+                }
+            }
+
+        }
+}

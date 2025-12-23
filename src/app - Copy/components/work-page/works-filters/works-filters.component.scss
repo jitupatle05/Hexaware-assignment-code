@@ -1,0 +1,15 @@
+.work-filters {
+    height: 90px;
+    padding: 32px;
+    display: flex; 
+    justify-content: space-between;
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        border: 0;
+        border-bottom: 1px solid;
+        margin-left: 5px;
+        font-family: inherit;
+    }
+}
+

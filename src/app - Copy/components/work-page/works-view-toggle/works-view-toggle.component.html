@@ -1,0 +1,23 @@
+<div class="view-toggle" role="group" aria-label="Works view toggle">
+  <button
+    type="button"
+    class="toggle-btn"
+    [class.active]="view === 'grid'"
+    [attr.aria-pressed]="view === 'grid'"
+    (click)="setView('grid')"
+  >
+    ⬛⬛
+    <span class="sr-only">Grid view</span>
+  </button>
+
+  <button
+    type="button"
+    class="toggle-btn"
+    [class.active]="view === 'list'"
+    [attr.aria-pressed]="view === 'list'"
+    (click)="setView('list')"
+  >
+    ☰
+    <span class="sr-only">List view</span>
+  </button>
+</div>

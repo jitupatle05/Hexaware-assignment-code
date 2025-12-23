@@ -1,0 +1,25 @@
+<div class="work-filters">
+
+  <div class="filter-left">
+    <label>Show me</label>
+    <select (change)="update($any($event.target).value || null, category)">
+    <option value="">All Works</option>
+    <option value="Finance">Finance</option>
+    <option value="Travel">Travel</option>
+  </select>
+  </div>
+  <div class="filter-right">
+    <label>In </label>
+    <select (change)="update(industry, $any($event.target).value || null)">
+    <option value="">All industries</option>
+    <option value="Web">Web</option>
+    <option value="Campaign">Campaign</option>
+  </select>
+  </div> 
+
+
+  
+  
+  
+  
+</div>

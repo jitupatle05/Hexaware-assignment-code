@@ -1,0 +1,18 @@
+<section class="hero worksSection" [ngClass]="view">
+  <div class="hero-card max-h-560 overflow-hidden" *ngFor="let work of works">
+    <div class="card-img-wrapper">
+      <picture class="card-img">
+        <img class="img" [ngSrc]="work.image" width="600" height="300" loading="lazy" />
+      </picture>
+      <div class="card-overlay"></div>
+    </div>
+
+    <div class="hero-card-content">
+      <span class="hero-sub-heading">{{ work.industry }}</span>
+      <h2 class="hero-heading">{{ work.title }}</h2>
+      <app-button> Read more </app-button>
+    </div>
+
+
+  </div>
+</section>

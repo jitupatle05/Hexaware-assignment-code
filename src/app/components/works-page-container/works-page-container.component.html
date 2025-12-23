@@ -1,0 +1,35 @@
+<section class="works-container">
+  <ng-container *ngIf="!loading(); else loadingTpl">
+
+    <ng-container *ngIf="enableFilters">
+      <div class="allFilters">
+
+      
+      <app-works-filters class="w-100"
+        [industry]="industry()"
+        [category]="category()"
+        (filterChange)="updateFilters($event.industry, $event.category)"
+      />
+
+      <app-works-view-toggle
+        [view]="viewMode()"
+        (viewChange)="viewMode.set($event)"
+      />
+      </div>
+    </ng-container>
+
+    @defer {
+      <app-works-grid
+        [works]="filteredWorks()"
+        [view]="viewMode()"
+      />
+    }
+    @placeholder {
+  <p>Grid/List are loading...</p>
+}
+  </ng-container>
+
+  <ng-template #loadingTpl>
+    <p>Loading works…</p>
+  </ng-template>
+</section>

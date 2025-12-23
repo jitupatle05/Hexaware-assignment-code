@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div class="logo">DEPT.</div>
+
+  <ul class="nav-links">
+    <li *ngFor="let item of menu.mainMenu.slice(1, 6)">
+      {{ item }}
+    </li>
+  </ul>
+
+  <div class="meatballs" (click)="menu.toggle()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>

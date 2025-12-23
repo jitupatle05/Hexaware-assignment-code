@@ -1,0 +1,74 @@
+<header class="site-header">
+
+  <!-- TOP BAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../../../assets/logo/DEPT-logo-white.svg" class="desktopLogo" alt="Brand logo">
+      <img src="../../../assets/logo/DEPT-logo-black.svg" class="mobileLogo" alt="Brand logo">
+    </div>
+    
+  <!-- MAIN NAV (desktop only) -->
+<ul class="main-nav">
+ 
+  <li
+  *ngFor="let item of menuItems.slice(0, 6)"
+  [class.active]="isActive(item.path)"
+  (click)="navigate(item.path)"
+>
+  <span>{{ item.label }}</span>
+</li>
+</ul>
+
+  <div class="meatballs" (click)="toggle()">
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="menuTxt">MENU</div>
+  </div>
+</nav>
+
+
+<!-- OVERLAY -->
+<div class="overlay" *ngIf="isOpen()" @overlayAnim>
+
+  <button class="close" (click)="toggle()">✕</button>
+
+  <!-- LEFT COLUMN -->
+  <div class="left">
+    <div class="logo big" routerLink="/">DEPT.</div>
+
+    <div class="countries">
+      <div class="title">Landen</div>
+      <ul>
+        <li *ngFor="let c of countries">
+          ▶ {{ c }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="right">
+    <div
+      class="menu-row"
+      *ngFor="let item of menuItems"
+      @itemAnim
+      (click)="navigate(item.path)"
+    >
+      <div class="line"></div>
+
+      <div class="menu-item" [class.active]="isActive(item.path)">
+        <span
+  *ngIf="isActive(item.path)"
+  @arrowAnim
+>
+  ▶
+</span>
+        {{ item.label }}
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</header>

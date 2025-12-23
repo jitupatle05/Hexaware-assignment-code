@@ -1,0 +1,33 @@
+
+ 
+<section class="hero">
+    <div class="hero-card">
+        <div class="card-img-wrapper">
+            <picture class="card-img">
+            <img src="../../../assets/images/banner-1.png" alt="Banner image" class="img">
+            </picture>
+            <div class="card-overlay"></div>
+        </div>
+        
+        <div class="hero-card-content">
+            <span class="hero-sub-heading">WORK</span>
+            <h2 class="hero-heading">A selection of projects that <strong>pioneer tech</strong> and <strong>marketing</strong>  to help brands stay ahead.</h2>
+        </div>
+    </div>
+</section>
+
+<app-works-page-container
+[enableFilters]="true"
+        [syncWithUrl]="false"
+        [limit]="6"></app-works-page-container>
+
+<section class="allWork">
+    <div class="filterOpt">
+        <div class="filterOptLeft">
+            <span>Show me <a><b>all work</b></a> </span>
+        </div>
+        <div class="filterOptRight">
+            <span>in <a><b>in all industries</b></a> </span>
+        </div>
+    </div>
+</section>

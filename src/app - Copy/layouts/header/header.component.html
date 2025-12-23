@@ -1,0 +1,40 @@
+<header class="header">
+  <div class="header__inner">
+
+    <div class="header__logo">
+      DEPT.
+    </div>
+
+    <!-- Meatball menu -->
+    <button
+  class="header__menu-btn"
+  [class.is-open]="menuOpen()"
+  aria-label="Toggle menu"
+  (click)="toggleMenu()"
+>
+  <span></span>
+  <span></span>
+  <span></span>meat
+</button>
+
+
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div
+  *ngIf="menuOpen()"
+  @menuFade
+  class="mobile-menu"
+>
+  <nav class="mobile-menu__nav">
+    <a routerLink="/" (click)="closeMenu()">Home</a>
+    <a routerLink="/work" (click)="closeMenu()">Work</a>
+    <a routerLink="/culture" (click)="closeMenu()">Culture</a>
+    <a routerLink="/services" (click)="closeMenu()">Services</a>
+    <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+  </nav>
+</div>
+
+
+

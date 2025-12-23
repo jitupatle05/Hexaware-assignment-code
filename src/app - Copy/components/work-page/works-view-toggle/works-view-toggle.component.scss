@@ -1,0 +1,41 @@
+.view-toggle {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+.toggle-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+
+  &.active {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+/* Screen-reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

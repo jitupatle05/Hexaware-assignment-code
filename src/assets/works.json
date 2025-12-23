@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "A Summer Island in the Netherlands",
+    "client": "Tourism NL",
+    "industry": "Travel",
+    "category": "Campaign",
+    "image": "assets/images/works/work1.png",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Not Some Average Banking Website",
+    "client": "ING",
+    "industry": "Finance",
+    "category": "Web",
+    "image": "assets/images/works/work2.png"
+  },
+  {
+    "id": 3,
+    "title": "Not Some Average Banking Website",
+    "client": "ING",
+    "industry": "Finance",
+    "category": "Web",
+    "image": "assets/images/works/work3.png"
+  },
+  {
+    "id": 4,
+    "title": "Not Some Average Banking Website",
+    "client": "ING",
+    "industry": "Finance",
+    "category": "Web",
+    "image": "assets/images/works/work4.png"
+  }
+]

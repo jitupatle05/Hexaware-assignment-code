@@ -1,0 +1,33 @@
+.navbar {
+  height: 64px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  margin: auto;
+  list-style: none;
+  font-size: 12px;
+}
+
+.meatballs {
+  width: 24px;
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 2px;
+    background: #fff;
+    margin: 4px 0;
+  }
+}

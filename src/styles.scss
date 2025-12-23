@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+// @import url(./responsive.scss);
+
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-bg: #000;
+  --color-text: #fff;
+  --color-muted: rgba(255,255,255,.6);
+  
+  --font-base: 'Inter', system-ui;
+  --font-size-xlg: 48px;
+  --font-size-lg: 32px;
+  --font-size-md: 16px;
+  
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  
+  --z-header: 1000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+//   background: var(--color-bg);
+//   color: var(--color-text);
+}
+.w-100{
+  width: 100%;
+}
+.max-h-560{
+  max-height: 560px;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
