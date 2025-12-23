@@ -2,6 +2,27 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
 
+# Important notes about the code
+"I Have tried to implement all possible given scenario in this time frame, I have other commitments to do and parallarly giving interviews to get the job, "
+
+Now coming to the code-
+My first step was to break the UX into reusable domains — works listing, filtering, navigation, and contact and form — and then design a clean separation between pages, containers, and presentational components.
+
+From there, I focused on reusability, performance, and maintainability, using Angular 17, and also used some latest features like Signals.
+
+The goal was that the same components could use in the landing page, works page, or any other feature page without duplicating logic.
+
+In terms of designing part(CSS) i tried to implement multiple ways to write css as well as in SCSS syntex,
+I have tried to explain how write Variables in SCSS, how can we use encapsulation, reusable CSS code,
+how can we acheive responsivenes - 
+Used 3 ways- 1. By usinhg Bootstrap
+             2. By using Flex/Grid layou
+             3. By using media queries
+
+
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
