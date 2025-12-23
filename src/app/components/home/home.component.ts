@@ -22,6 +22,8 @@ import { fadeUp } from '../../Animations';
   ]
 })
 export class HomeComponent implements OnInit {
+showWorks = false;
+showContact = false;
 
   works: Work[] = [];
 

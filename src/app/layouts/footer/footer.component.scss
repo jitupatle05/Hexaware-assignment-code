@@ -1,58 +1,5 @@
 /* CTA */
-.footer-cta {
-  background: #f5f5f5;
-  padding: 80px 64px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-}
 
-.cta-left h2 {
-  font-size: clamp(32px, 5vw, 56px);
-  font-weight: 400;
-  line-height: 1.05;
-}
-
-.cta-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  input,
-  textarea {
-    border: none;
-    border-bottom: 1px solid #000;
-    background: transparent;
-    padding: 12px 0;
-    font-size: 14px;
-    outline: none;
-  }
-
-  textarea {
-    resize: none;
-    height: 80px;
-  }
-
-  button {
-    margin-top: 24px;
-    width: fit-content;
-    padding: 8px 24px;
-    border: 1px solid #000;
-    background: transparent;
-    cursor: pointer;
-    transition: background 200ms ease, color 200ms ease;
-
-    &:hover {
-      background: #000;
-      color: #fff;
-    }
-  }
-
-  .error {
-    font-size: 12px;
-    color: red;
-  }
-}
 
 /* FOOTER */
 .footer {
@@ -96,6 +43,12 @@
   justify-content: space-between;
   font-size: 11px;
   opacity: 0.6;
+  .bottom-links{
+    span{
+      margin-right: 10px;
+    }
+  }
+
 }
 
 /* BACK TO TOP */
